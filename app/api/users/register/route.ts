@@ -1,4 +1,3 @@
-import axios from "axios";
 import { connectDB } from "config/dbConfig";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs"
