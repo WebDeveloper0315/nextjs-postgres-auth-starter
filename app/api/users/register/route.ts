@@ -16,8 +16,6 @@ export async function POST(request: NextRequest) {
         const hashedPassword = await bcrypt.hash(reqBody.password, salt);
         reqBody.password = hashedPassword;
 
-        //Create new user
-        
 
     } catch (error:any) {
         return NextResponse.json({
